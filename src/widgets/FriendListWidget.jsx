@@ -7,7 +7,6 @@ import { setFriends } from "../store/slice/authSlice";
 import axios from "axios";
 
 const FriendListWidget = ({ userId }) => {
-  console.log(`friends widget ${userId}`);
   const dispatch = useDispatch();
   const { palette } = useTheme();
   const token = useSelector((state) => state.token);
